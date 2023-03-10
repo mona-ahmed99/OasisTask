@@ -1,0 +1,22 @@
+.card-img-top{
+    height: 200px;
+    object-fit:cover;
+    
+}
+.card-body h5{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    word-break: break-all;
+    cursor: pointer;
+}
+.card-body p{
+    font-size: 1rem;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+}

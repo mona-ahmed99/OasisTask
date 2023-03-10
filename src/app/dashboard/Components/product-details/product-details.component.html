@@ -1,0 +1,23 @@
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-4">
+            <img [src]="productDetails.images[0]" class="w-100">
+        </div>
+
+        <div class="col-md-8">
+            <h2>{{productDetails.title}}</h2>
+            <div class="details px-3">
+                <h4> overView: </h4>
+                <p>{{productDetails.description}}</p>
+                <div class="brdr w-50 mb-4"></div>
+                <h5> Brand: <span>{{productDetails.brand}}</span></h5>
+                <h5> Category: <span>{{productDetails.category}}</span></h5>
+                <h5> Price: <span>{{productDetails.price}}</span></h5>
+                <h5> Rating: <span>{{productDetails.rating}}</span></h5>
+                <h5> discountPercentage: <span>{{productDetails.discountPercentage}}</span></h5>
+            </div>
+
+
+        </div>
+    </div>
+</div>

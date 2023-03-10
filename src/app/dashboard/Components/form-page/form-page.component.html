@@ -1,0 +1,33 @@
+<div class="container my-5">
+    <form [formGroup]="addProductForm" class="w-50 m-auto">
+        <!-- product title -->
+        <div class="form-group">
+            <label for="title">Product Title</label>
+            <input formControlName="title" type="text" class="form-control" id="title">
+        </div>
+        <!-- description -->
+        <div class="form-group">
+            <label for="description">Product Description</label>
+            <input formControlName="description" type="text" class="form-control" id="description">
+        </div>
+        <!-- category -->
+        <div class="form-group">
+            <label for="category">Product Category</label>
+            <input formControlName="category" type="text" class="form-control" id="category">
+        </div>
+        <!-- price -->
+        <div class="form-group">
+            <label for="price">Product Price</label>
+            <input formControlName="price" type="number" class="form-control" id="price">
+        </div>
+        <!-- Image -->
+        <div class="form-group">
+            <label for="image">Product Image</label>
+            <input type="file" class="form-control" id="price" (change)="selectImage($event)">
+        </div>
+        <!-- action buttons -->
+        <button class="btn btn-info" [disabled]="addProductForm.invalid" *ngIf="!currentProduct" (click)="addProduct()">Add Product</button>
+        <button class="btn btn-info"  *ngIf="currentProduct" (click)="updateProduct()">Update Product</button>
+    </form>
+
+</div>
